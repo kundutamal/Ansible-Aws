@@ -1,0 +1,15 @@
+---
+- name: "yum module demo"
+  hosts: localhost
+  vars:
+    package: "ntp"
+  become: true
+  tasks:
+    - name: "Install {{ package }} in servers"
+      yum:
+        name: " {{ package }} "
+        state: present
+      register: result
+    - name: Debug message
+      debug:
+        msg: "{{ result }}"
