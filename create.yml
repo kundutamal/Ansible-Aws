@@ -1,6 +1,6 @@
 --- 
 - name: "Create user demo"
-  hosts: local
+  hosts: localhost
   vars:
     user: "test"
   become: true
@@ -11,4 +11,3 @@
         name: "{{ user }}"
         state: present
         shell: "/bin/shell"
-        
