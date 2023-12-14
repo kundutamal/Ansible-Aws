@@ -10,4 +10,4 @@
       user:
         name: "{{ user }}"
         state: present
-        shell: "/bin/shell"
+        shell: "/bin/bash"
