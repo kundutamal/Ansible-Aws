@@ -1,0 +1,14 @@
+--- 
+- name: "Create user demo"
+  hosts: local
+  vars:
+    user: "test"
+  become: true
+  gather_facts: true
+  tasks:
+    - name: "creating user {{ user }}"
+      user:
+        name: "{{ user }}"
+        state: present
+        shell: "/bin/shell"
+        
