@@ -5,7 +5,7 @@
     package: "python-pip"
   tasks:
     - name: ping
-      ping
+      ping:
     - name: "display hostname"
       command: hostname
     - name: "Install package"
