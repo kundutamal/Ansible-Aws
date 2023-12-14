@@ -1,0 +1,13 @@
+---
+- name: "Package install"
+  hosts: localhost
+  vars:
+    package: "httpd"
+  become: true
+  tasks: 
+    - name: "Install {{ package }} package"
+      yum:
+        name: "{{ package }}"
+        state: present
+        update_cache: true
+        
