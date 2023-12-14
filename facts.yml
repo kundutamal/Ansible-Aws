@@ -1,0 +1,8 @@
+---
+- name: "Ansible gather facts for the ip address"
+  hosts: localhost
+  become: true
+  tasks:
+    - name: "Eth0 ip address"
+      debug:
+        msg: "{{ ansible_facts }}"
