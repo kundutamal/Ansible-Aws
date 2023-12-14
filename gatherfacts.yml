@@ -6,5 +6,5 @@
   tasks:
     - name: "Show system results"
       debug:
-        msg:  ansible_all_ipv4_addresses  
+        var:  " {{ ansible_all_ipv4_addresses }}"  
     
