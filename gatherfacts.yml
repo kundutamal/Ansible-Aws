@@ -6,4 +6,4 @@
   tasks:
     - name: "Show system results"
       debug:
-        var: ansible_facts["distribution"]
+        var: ansible_facts["all_ipv4_addresses"]
