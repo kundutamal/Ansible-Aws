@@ -6,4 +6,4 @@
   tasks:
     - name: "Show system results"
       debug:
-        msg: ansible_facts
+        var: ansible_facts
