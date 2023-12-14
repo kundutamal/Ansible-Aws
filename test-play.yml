@@ -1,0 +1,15 @@
+---
+- name: "2nd play.."
+  hosts: localhost
+  vars: 
+    package: "python-pip"
+  tasks:
+    - name: ping
+      ping
+    - name: "display hostname"
+      command: hostname
+    - name: "Install package"
+      yum:
+        name: "{{ package }}"
+        state: present
+        update_cache: true
