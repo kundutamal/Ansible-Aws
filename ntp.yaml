@@ -2,7 +2,7 @@
 - name: "yum module demo"
   hosts: localhost
   vars:
-    package: "ntp"
+    package: "ntpd"
   become: true
   tasks:
     - name: "Install {{ package }} in servers"
