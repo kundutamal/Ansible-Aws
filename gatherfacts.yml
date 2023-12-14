@@ -4,7 +4,7 @@
   become: true
   gather_facts: true
   tasks:
-    name: "Show system results"
-    debug:
-      - name: "gather fcats output"
-        msg: ansible_facts
+    - name: "Show system results"
+     debug:
+       - name: "gather fcats output"
+         msg: ansible_facts
